@@ -1,0 +1,21 @@
+﻿Build started 3/22/2015 1:24:16 AM.
+     1>Project "C:\Users\Sherie\Documents\projects\TTT_gitHub\Tic_tac_toe\TicTacToe\TicTacToe\TicTacToe.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt BoardLevel.cpp
+         BoardLevel.cpp
+     1>c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(57): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(156): warning C4258: 'square' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(143) : definition of 'square' ignored
+                 c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(138) : definition of 'square' used
+     1>c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(157): warning C4258: 'square' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(143) : definition of 'square' ignored
+                 c:\users\sherie\documents\projects\ttt_github\tic_tac_toe\tictactoe\tictactoe\boardlevel.cpp(138) : definition of 'square' used
+       Link:
+         C:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Sherie\Documents\projects\TTT_gitHub\Tic_tac_toe\TicTacToe\Debug\TicTacToe.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Sherie\Documents\projects\TTT_gitHub\Tic_tac_toe\TicTacToe\Debug\TicTacToe.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Sherie\Documents\projects\TTT_gitHub\Tic_tac_toe\TicTacToe\Debug\TicTacToe.lib" /MACHINE:X86 Debug\BoardLevel.obj
+         Debug\Main.obj
+         TicTacToe.vcxproj -> C:\Users\Sherie\Documents\projects\TTT_gitHub\Tic_tac_toe\TicTacToe\Debug\TicTacToe.exe
+     1>Done Building Project "C:\Users\Sherie\Documents\projects\TTT_gitHub\Tic_tac_toe\TicTacToe\TicTacToe\TicTacToe.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.48
