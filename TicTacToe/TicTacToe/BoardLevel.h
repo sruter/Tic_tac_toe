@@ -18,6 +18,7 @@ public:
 	void Easy();
 	void Medium();
 	void Hard();
+	void TwoPlayer();
 };
 
 #endif

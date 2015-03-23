@@ -14,20 +14,22 @@ int main(){
 	bool gameOver = false;
 
 
-	cout << "\t\tWelcome to Tic Tac Toe\n";
+	cout << "\t\tWelcome to Tic Tac Toe\n\n";
 	while (gameOver != true){
 		BoardLevel level;
 
-		cout << "\nPlease select your level of play:\nA) Easy\nB) Medium\nC) Hard\nD) Quit\n\nEnter letter of selection:  ";
+		cout << "Please select your level of play:\nA) Easy\nB) Medium\nC) Hard\nD) Two Player\nE) Quit\n\nEnter letter of selection:  ";
 		cin >> selection;
 
-		if (selection == 'A')
+		if (selection == 'A' || selection == 'a')
 			level.Easy();
-		else if (selection == 'B')
+		else if (selection == 'B' || selection == 'b')
 			level.Medium();
-		else if (selection == 'C')
+		else if (selection == 'C' || selection == 'c')
 			level.Hard();
-		else if (selection == 'D'){
+		else if (selection == 'D' || selection == 'd')
+			level.TwoPlayer();
+		else if (selection == 'E' || selection == 'e'){
 			gameOver = true;
 			break;
 		}
@@ -37,8 +39,8 @@ int main(){
 
 		cout << "\n\nDo you wish to play again?\n\t Enter (Y or N): ";
 		cin >> selection;
-		while (selection != 'Y'){
-			if (selection == 'N'){
+		while (selection != 'Y' || selection != 'y'){
+			if (selection == 'N' || selection == 'n'){
 				gameOver = true;
 				break;
 			}

@@ -130,6 +130,50 @@ void BoardLevel::Hard(){
 	else if (Solved(board) == "DRAW")
 		cout << "\nWelp, the cat has this one!\n";
 };
+void BoardLevel::TwoPlayer(){
+	int selection;
+
+	cout << "\nInitial Board: \n\n";
+	DisplayBoard();
+	while (Solved(board) == "NONE")
+	{
+		if (turn % 2 == 0)
+		{
+			cout << "Player 1, please enter selection of square: ";
+			cin >> selection;
+			selection--;
+			if ((selection >= 0 || selection <= 9) && (board[selection] != "X" || board[selection] != "O")){
+				turn++;
+				board[selection] = "X";
+				DisplayBoard();
+			}
+			else{
+				cout << "\nInvalid selection";
+			}
+
+		}
+		else if (turn % 2 == 1)
+		{
+			cout << "Player 2, please enter selection of square: ";
+			cin >> selection;
+			selection--;
+			if ((selection >= 0 || selection <= 9) && (board[selection] != "X" || board[selection] != "O")){
+				turn++;
+				board[selection] = "O";
+				DisplayBoard();
+			}
+			else{
+				cout << "\nInvalid selection ";
+			}
+		}
+	}
+	if (Solved(board) == "X")
+		cout << "\nCongrats Player 1, you win!!!!\n";
+	else if (Solved(board) == "O")
+		cout << "\nCongrats Player 2, you win!!!!\n";
+	else if (Solved(board) == "DRAW")
+		cout << "\nWelp, the cat has this one!\n";
+};
 
 int BoardLevel::BestMove(string _board[9]){
 
@@ -194,7 +238,6 @@ string BoardLevel::Solved(string board[9])
 };
 
 void BoardLevel::DisplayBoard(){
-	cout << endl;
 	for (int i = 0; i<9; i++)
 	{
 		if (i == 0 || i == 3 || i == 6)
